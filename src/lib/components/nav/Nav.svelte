@@ -32,8 +32,8 @@
 					{/each}
 				</div>
 				<DisclosureButton
-					class="rounded-md p-1 text-slate-900 hover:bg-slate-200 
-					focus-visible:bg-slate-200
+					class="rounded-md p-1 text-slate-900 hover:bg-slate-100 
+					focus-visible:bg-slate-100
 					focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400 lg:hidden"
 				>
 					<span class="sr-only">Open main menu</span>
