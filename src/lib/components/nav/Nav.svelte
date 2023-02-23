@@ -32,15 +32,15 @@
 					{/each}
 				</div>
 				<DisclosureButton
-					class="rounded-md p-1 text-slate-900 hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400 lg:hidden"
+					class="rounded-md p-1 text-slate-900 hover:bg-slate-200 
+					focus-visible:bg-slate-200
+					focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400 lg:hidden"
 				>
 					<span class="sr-only">Open main menu</span>
 					{#if open}
 						<Cancel class="block h-8 w-8 text-slate-900 md:h-10 md:w-10" />
 					{:else}
-						<Menu
-							class="block h-8 w-8 text-slate-900 group-hover:text-orange-500 md:h-10 md:w-10"
-						/>
+						<Menu class="block h-8 w-8 text-slate-900 md:h-10 md:w-10" />
 					{/if}
 				</DisclosureButton>
 				<a
@@ -50,16 +50,14 @@
 			</div>
 		</div>
 	</div>
-	<DisclosurePanel class="block border-t-2 border-slate-200 py-6 md:py-8 lg:hidden">
+	<DisclosurePanel class="block border-t-2 border-slate-100 py-6 md:py-8 lg:hidden">
 		<ul class="space-y-4 md:space-y-6">
 			{#each links as { name, href }}
 				<li>
 					<DisclosureButton
+						class="text-base font-normal text-slate-900 hover:text-orange-500 focus-visible:text-orange-500 focus-visible:underline focus-visible:outline-none"
 						as="a"
 						{href}
-						class="{$page.url.pathname === href
-							? 'text-orange-500'
-							: 'text-slate-900'} text-base font-normal hover:text-orange-500 focus-visible:text-orange-500 focus-visible:underline focus-visible:outline-none"
 					>
 						{name}
 					</DisclosureButton>
@@ -67,13 +65,11 @@
 			{/each}
 			<li>
 				<DisclosureButton
-					as="a"
-					href="/"
 					class="text-base font-normal text-slate-900 hover:text-orange-500 focus-visible:text-orange-500 focus-visible:underline focus-visible:outline-none"
+					as="a"
+					href="/">Login</DisclosureButton
 				>
-					Login
-				</DisclosureButton>
 			</li>
-		</ul>
-	</DisclosurePanel>
+		</ul></DisclosurePanel
+	>
 </Disclosure>
