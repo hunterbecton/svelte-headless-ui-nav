@@ -15,7 +15,7 @@
 
 <Disclosure as="nav" let:open class="px-4 py-4 md:px-8 lg:py-10">
 	<div class="mx-auto max-w-5xl">
-		<div class="relative flex h-16 items-center justify-between">
+		<div class="flex h-16 items-center justify-between">
 			<div class="flex flex-1 items-center justify-between">
 				<a
 					class="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
